@@ -1,0 +1,11 @@
+# Build folder
+temp/*
+
+# Kernel module deploy folder
+deploy/*
+
+# Source folder
+src/*
+
+# Image output folder
+output/*
