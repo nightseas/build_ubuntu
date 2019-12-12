@@ -11,8 +11,8 @@
 ######################################################
 
 # User name and hostname
-USER=zynq
-HOST=Zynq7000
+USER=ubuntu
+HOST=Ubuntu
 
 # Hostname and network settings
 echo $HOST > /etc/hostname

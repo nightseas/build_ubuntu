@@ -38,11 +38,11 @@ mkdir $DEST_DIR
 # Extract base image
 tar -xzpf $SRC_IMG -C $DEST_DIR
 cp -a /usr/bin/qemu-arm-static $DEST_DIR/usr/bin/
-cp -a ./chroot_build_stage2.sh $DEST_DIR/
+cp -a $SCRIPT_DIR/chroot_build_stage2.sh $DEST_DIR/
 
 # Add overlay for DNS and apt source
 cp -aL /etc/resolv.conf $DEST_DIR/etc/
-cp -a $SRC_OVL/sources.list $DEST_DIR/etc/apt/
+#cp -a $SRC_OVL/sources.list $DEST_DIR/etc/apt/
 
 # Bind host dev and proc folder to workspace
 mount -o bind /dev $DEST_DIR/dev
@@ -69,5 +69,5 @@ touch $DEST_DIR/etc/NetworkManager/conf.d/10-globally-managed-devices.conf
 
 echo "printf \" * Build Stamp:  $BUILD_STAMP\\n\"" >> $DEST_DIR/etc/update-motd.d/10-help-text
 
-# Create ext4 rootfs package
-./pack_rootfs_ext4.sh
+# Create rootfs archive
+$SCRIPT_DIR/pack_rootfs.sh
