@@ -11,7 +11,7 @@
 ######################################################
 
 # Workspace of Auto-build environment
-HOST_DEPS="qemu-user-static u-boot-tools cpio"
+HOST_DEPS="binfmt-support qemu-user-static u-boot-tools cpio"
 
 # Check root
 if [ "$EUID" -ne 0 ]
