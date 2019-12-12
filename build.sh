@@ -12,6 +12,16 @@
 
 # Workspace of Auto-build environment
 ROOT_DIR="$( cd "$(dirname "$0")" ; pwd -P )"
+DIRS="src output temp deploy deploy/lib"
+
+# Step 0: create folder structures if not exist
+for FOLDER in $DIRS
+do
+    if [ ! -d "$ROOT_DIR/$FOLDER" ]; then
+        echo "Folder '$ROOT_DIR/$FOLDER' does not exist, creating one..."
+        mkdir $ROOT_DIR/$FOLDER
+    fi
+done
 
 # Step 1: install denpendencies, only works on Debian/Ubuntu
 sudo $ROOT_DIR/scripts/install_deps.sh
