@@ -4,9 +4,9 @@
 #                                                    #
 #         Ubuntu Rootfs Building Scripts             #
 #                                                    #
-#   File   : build_rootfs_armhf.sh                   #
+#   File   : build_rootfs_amd64.sh                   #
 #   Author : Xiaohai Li (haixiaolee@gmail.com)       #
-#   Rev    : v0.1 2019-12-11                         #
+#   Rev    : v0.1 2019-12-30                         #
 #                                                    #
 ######################################################
 
