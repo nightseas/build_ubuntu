@@ -15,5 +15,5 @@ SCRIPT_DIR="$( cd "$(dirname "$0")" ; pwd -P )"
 ROOT_DIR=$SCRIPT_DIR/..
 
 # Fetch Ubuntu base root file system
-cd $ROOT_DIR/src && wget http://cdimage.ubuntu.com/ubuntu-base/releases/18.04/release/ubuntu-base-18.04.3-base-armhf.tar.gz
+cd $ROOT_DIR/src && wget http://cdimage.ubuntu.com/ubuntu-base/releases/18.04/release/ubuntu-base-18.04.3-base-amd64.tar.gz
 

@@ -18,7 +18,7 @@ ROOT_DIR=$SCRIPT_DIR/..
 
 # Source base image and workspace destination
 WORKSPACE_DIR=$ROOT_DIR/temp/ubuntu18.04.3
-DEST_PACK=$ROOT_DIR/output/rootfs_ubuntu_bionic_armhf_$BUILD_STAMP.tar.gz
+DEST_PACK=$ROOT_DIR/output/rootfs_ubuntu_bionic_amd64_$BUILD_STAMP.tar.gz
 
 # Check root
 if [ "$EUID" -ne 0 ]

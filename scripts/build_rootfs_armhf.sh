@@ -17,7 +17,7 @@ SCRIPT_DIR="$( cd "$(dirname "$0")" ; pwd -P )"
 ROOT_DIR=$SCRIPT_DIR/..
 
 # Source base image and workspace destination
-SRC_IMG=$ROOT_DIR/src/ubuntu-base-18.04.3-base-armhf.tar.gz
+SRC_IMG=$ROOT_DIR/src/ubuntu-base-16.04.2-base-amd64.tar.gz
 SRC_KMOD=$ROOT_DIR/deploy/lib
 SRC_OVL=$ROOT_DIR/overlay
 DEST_DIR=$ROOT_DIR/temp/ubuntu18.04.3
@@ -37,7 +37,7 @@ mkdir $DEST_DIR
 
 # Extract base image
 tar -xzpf $SRC_IMG -C $DEST_DIR
-cp -a /usr/bin/qemu-arm-static $DEST_DIR/usr/bin/
+cp -a /usr/bin/qemu-x86_64-static $DEST_DIR/usr/bin/
 cp -a $SCRIPT_DIR/chroot_build_stage2.sh $DEST_DIR/
 
 # Add overlay for DNS and apt source
@@ -55,7 +55,7 @@ chroot $DEST_DIR ./chroot_build_stage2.sh
 umount $DEST_DIR/dev $DEST_DIR/proc
 
 # Remove qemu and 2nd stage scripts
-rm $DEST_DIR/usr/bin/qemu-arm-static
+rm $DEST_DIR/usr/bin/qemu-x86_64-static
 rm $DEST_DIR/chroot_build_stage2.sh
 
 # Copy kernel modules to rootfs
@@ -63,8 +63,8 @@ cp -Rp $SRC_KMOD/* $DEST_DIR/lib/
 
 # Add overlay to rootfs
 cp $SRC_OVL/timesyncd.conf $DEST_DIR/etc/systemd/
-cp $SRC_OVL/10-help-text-zynq7010 $DEST_DIR/etc/update-motd.d/10-help-text
-cp $SRC_OVL/LAN $DEST_DIR/etc/NetworkManager/system-connections/
+cp $SRC_OVL/10-help-text-snr $DEST_DIR/etc/update-motd.d/10-help-text
+#cp $SRC_OVL/LAN $DEST_DIR/etc/NetworkManager/system-connections/
 touch $DEST_DIR/etc/NetworkManager/conf.d/10-globally-managed-devices.conf
 
 echo "printf \" * Build Stamp:  $BUILD_STAMP\\n\"" >> $DEST_DIR/etc/update-motd.d/10-help-text
