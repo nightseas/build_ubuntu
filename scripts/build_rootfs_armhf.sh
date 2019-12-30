@@ -17,7 +17,7 @@ SCRIPT_DIR="$( cd "$(dirname "$0")" ; pwd -P )"
 ROOT_DIR=$SCRIPT_DIR/..
 
 # Source base image and workspace destination
-SRC_IMG=$ROOT_DIR/src/ubuntu-base-16.04.2-base-amd64.tar.gz
+SRC_IMG=$ROOT_DIR/src/ubuntu-base-18.04.3-base-amd64.tar.gz
 SRC_KMOD=$ROOT_DIR/deploy/lib
 SRC_OVL=$ROOT_DIR/overlay
 DEST_DIR=$ROOT_DIR/temp/ubuntu18.04.3
