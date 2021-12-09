@@ -17,8 +17,8 @@ SCRIPT_DIR="$( cd "$(dirname "$0")" ; pwd -P )"
 ROOT_DIR=$SCRIPT_DIR/..
 
 # Source base image and workspace destination
-WORKSPACE_DIR=$ROOT_DIR/temp/ubuntu18.04.3
-DEST_PACK=$ROOT_DIR/output/rootfs_ubuntu_bionic_armhf_$BUILD_STAMP.tar.gz
+WORKSPACE_DIR=$ROOT_DIR/temp/ubuntu20.04.3
+DEST_PACK=$ROOT_DIR/output/rootfs_ubuntu_focal_rv64_$BUILD_STAMP.tar.gz
 
 # Check root
 if [ "$EUID" -ne 0 ]

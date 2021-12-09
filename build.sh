@@ -2,7 +2,7 @@
 
 ######################################################
 #                                                    #
-#        Zynq Linux Image Auto-build Scripts         #
+#       Ubuntu Linux Image Auto-build Scripts        #
 #                                                    #
 #   File   : build.sh                                #
 #   Author : Xiaohai Li (haixiaolee@gmail.com)       #
@@ -30,4 +30,4 @@ sudo $ROOT_DIR/scripts/install_deps.sh
 $ROOT_DIR/scripts/fetch_src.sh
 
 # Step 3: excute building scripts
-sudo $ROOT_DIR/scripts/build_rootfs_armhf.sh
+sudo $ROOT_DIR/scripts/build_rootfs_rv64.sh
