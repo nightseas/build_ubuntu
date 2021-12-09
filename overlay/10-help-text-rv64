@@ -1,0 +1,46 @@
+#!/bin/sh
+#
+#    10-help-text-zynq7010 - print the help text associated with the distro
+#
+#    This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation; either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License along
+#    with this program; if not, write to the Free Software Foundation, Inc.,
+#    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+
+printf "              vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv\n"
+printf "                  vvvvvvvvvvvvvvvvvvvvvvvvvvvv\n"
+printf "rrrrrrrrrrrrr       vvvvvvvvvvvvvvvvvvvvvvvvvv\n"
+printf "rrrrrrrrrrrrrrrr      vvvvvvvvvvvvvvvvvvvvvvvv\n"
+printf "rrrrrrrrrrrrrrrrrr    vvvvvvvvvvvvvvvvvvvvvvvv\n"
+printf "rrrrrrrrrrrrrrrrrr    vvvvvvvvvvvvvvvvvvvvvvvv\n"
+printf "rrrrrrrrrrrrrrrrrr    vvvvvvvvvvvvvvvvvvvvvvvv\n"
+printf "rrrrrrrrrrrrrrrr      vvvvvvvvvvvvvvvvvvvvvv  \n"
+printf "rrrrrrrrrrrrr       vvvvvvvvvvvvvvvvvvvvvv    \n"
+printf "rr                vvvvvvvvvvvvvvvvvvvvvv      \n"
+printf "rr            vvvvvvvvvvvvvvvvvvvvvvvv      rr\n"
+printf "rrrr      vvvvvvvvvvvvvvvvvvvvvvvvvv      rrrr\n"
+printf "rrrrrr      vvvvvvvvvvvvvvvvvvvvvv      rrrrrr\n"
+printf "rrrrrrrr      vvvvvvvvvvvvvvvvvv      rrrrrrrr\n"
+printf "rrrrrrrrrr      vvvvvvvvvvvvvv      rrrrrrrrrr\n"
+printf "rrrrrrrrrrrr      vvvvvvvvvv      rrrrrrrrrrrr\n"
+printf "rrrrrrrrrrrrrr      vvvvvv      rrrrrrrrrrrrrr\n"
+printf "rrrrrrrrrrrrrrrr      vv      rrrrrrrrrrrrrrrr\n"
+printf "rrrrrrrrrrrrrrrrrr          rrrrrrrrrrrrrrrrrr\n"
+printf "rrrrrrrrrrrrrrrrrrrr      rrrrrrrrrrrrrrrrrrrr\n"
+printf "rrrrrrrrrrrrrrrrrrrrrr  rrrrrrrrrrrrrrrrrrrrrr\n"
+printf "\n"
+printf "       INSTRUCTION SETS WANT TO BE FREE\n\n";
+
+printf "\n"
+printf " * RFS Built By: Nightseas <haixiaolee@gmail.com>\n"
+printf " * Description:  Ubuntu rootfs for RISC-V 64-bit board.\n"
